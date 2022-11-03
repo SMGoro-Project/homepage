@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Skript.CN | Skript中文介绍</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" href="images/sk.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Skript</strong> <span>中文社区</span></a>
+						<nav>
+							<a href="#menu">菜单</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">主页</a></li>
+							<li><a href="introduction.html">Skript介绍</a></li>
+							<li><a href="https://bbs.smgoro.top/skript" target="_blank">Skript中文论坛</a></li>
+							<li><a href="https://www.minebbs.com/forums/Je-be/?ref=2823" target="_blank">MineBBS</a></li>
+							<li><a href="http://skripthub.net" target="_blank">SkriptHub</a></li>
+							<li><a href="http://skunity.com" target="_blank">SkUnity</a></li>
+							<li><a href="skxgeyser.html">Sk x Geyser</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="https://jq.qq.com/?_wv=1027&k=GQ4kn3fE" target="_blank" class="button primary fit">Skript交流群</a></li>
+							<li><a href="https://jq.qq.com/?_wv=1027&k=0IvGqG4T" target="_blank" class="button fit">IMC交流群</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Skript介绍</h1>
+							</header>
+							<div class="content">
+								<p>Skript是一款专门为Minecraft Java Edition服务器开发的脚本语言，<br />
+								使用Skript开发服务器所需功能，就像使用命令方块一样简单，但扩展性更强！</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>什么是Skript?</h2>
+									</header>
+									<p>
+									   Skript是一款专门为Minecraft Java Edition服务器开发的脚本语言，
+									   使用Skript开发服务器所需功能，就像使用命令方块一样简单，但扩展性更强！
+									</p>
+									<blockquote>
+										Skript 是一个适用于Bukkit/Spigot系的插件, 而Bukkit/Spigot系是知名的Minecraft服务器模组, 
+										他允许服务器的管理员轻松修改Minecraft的游戏特性，而无需进行任何源码更改。
+                                    <br \>— Peter "Njolbrim" Güttinger
+									</blockquote>
+									<p>
+										Skript语法十分简单粗暴，对于零编程基础的服主而言，相比直接学习Java语言要来的更加快捷方便！
+										而Skript的语法逻辑一定程度上也和Java语言类似，学习Skript语言也将有助于学习Java语言~
+										对于有一定开发基础的开发者来说，Skript-reflect也将是一个很好的辅助工具，可以直接调用Java的类，
+										而不用编译即可在Minecraft服务器上运行。以下是Java&Skript的语法对比：
+									</p>
+									<h3>Java</h3>
+									<pre><code>
+#JAVA:
+@EventHandler
+public void onPlayerJoin(PlayerJoinEvent evt) {
+    Player player = evt.getPlayer(); // 玩家加入
+    ItemStack itemstack = new ItemStack(Material.DIAMOND, 64); // 定义钻石
+    if (player.hasPermission("")) {
+        inventory.addItem(itemstack); // 给予钻石
+        player.sendMessage("欢迎你加入服务器!你获得了64枚钻石!");
+    }
+}
+                                    </code></pre>
+									<h3>Skript</h3>
+									<pre><code>
+#Skript:
+on join:
+    if player has permission "":
+        message "欢迎你加入服务器!你获得了64枚钻石!"
+        give 64 diamond to player
+                                    </code></pre>
+									<p>
+										Skript同样拥有丰富的扩展插件，大大扩展了Skript语言的可用范围，你可以使用那些扩展插件来完成原本Skript不能完成的事，
+										包括但不限于：QQ机器人的调用，小游戏的基本模式调用，HTTP API的调用以及Floodgate2.0 API的使用等等！
+									</p>
+									<p>
+										如果你看完如上介绍，决定开始学习使用Skript脚本语言了的话，那么欢迎参考如下Skript相关内容资料进行学习查询。
+									</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="https://www.mcbbs.net/thread-962548-1-1.html" class="image">
+										<img src="images/skdocs1024.png" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Skript中文入门教程</h3>
+											</header>
+											<p>
+											   这是由mcbbs版主 TUCAOEVER 所编纂的Skript编程中文入门教程，里面详细介绍了关于Skript的编程入门相关知识。
+											   如果你英语水准不好，也不想看碍眼的机翻，那这篇入门教程大概很适合你。
+											</p>
+											<ul class="actions">
+												<li><a href="https://www.mcbbs.net/thread-962548-1-1.html" class="button" target="_blank">点击查看</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="http://imc.re/" class="image">
+										<img src="images/imc1024.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Skript中文社区新手引导</h3>
+											</header>
+											<p>
+												这是由<a href="http://imc.re/" target="_blank">IMC.RE团队</a>所运营维护的Skript中文社区的新手引导板块，
+												其主旨是为广大Skript学习新手分享基础开发经验，以及搬运汉化优质入门教程等内容，将会逐渐添加。
+												同样欢迎广大有一定Skript经验的各路大佬前来添砖加瓦，我们将不胜感激。
+											</p>
+											<ul class="actions">
+												<li><a href="https://bbs.smgoro.top/forums/skript_greenhand/" class="button" target="_blank">点击查看</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://www.spigotmc.org/" class="image">
+										<img src="images/spigot.png" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Spigot Skript</h3>
+											</header>
+											<p>
+												这是由 Spigot 官方团队运营维护的Spigot官方论坛资源内容中的Skript资源板块，有无数国内外Skript开发者在此发布资源。
+												在 Spigot 的资源板块分区下，Skript目前资源保有量占到了Spigot分区的第二位，数量达到8000+资源。
+											</p>
+											<ul class="actions">
+												<li><a href="https://www.spigotmc.org/resources/categories/skript.25/" class="button" target="_blank">点击查看</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="http://imc.re/" class="image">
+										<img src="images/imc1024.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Skript中文资源</h3>
+											</header>
+											<p>
+												这是由<a href="https://www.spigotmc.org/" target="_blank">IMC.RE团队</a>所运营维护的Skript中文资源站，
+												其主旨是为广大Skript国人更加方便快捷的发布分享或搬运Skript相关资源。
+											</p>
+											<ul class="actions">
+												<li><a href="https://bbs.smgoro.top/resources/categories/skript.12/" class="button" target="_blank">点击查看</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://skunity.com/" class="image">
+										<img src="images/skunity1024.png" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>SkUnity</h3>
+											</header>
+											<p>
+												这是由 Skunity 团队运营维护的国外Skript相关社区论坛，SkUnity为国外开发者提供了Skript相关的大部分的支持，
+												包括但不限于论坛的相关讨论，Skript本体以及附属插件的下载，以及开发文档等内容。
+											</p>
+											<ul class="actions">
+												<li><a href="https://skunity.com/" class="button" target="_blank">点击查看</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="http://imc.re/" class="image">
+										<img src="images/imc1024.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Skript中文论坛</h3>
+											</header>
+											<p>
+												这是由<a href="https://www.spigotmc.org/" target="_blank">IMC.RE团队</a>所运营维护的Skript中文论坛，
+												其主旨是为广大Skript国人更加方便快捷的交流分享Skript相关的开发经验，教程等。
+											</p>
+											<ul class="actions">
+												<li><a href="https://bbs.smgoro.top/skript" class="button" target="_blank">点击查看</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://skripthub.net/" class="image">
+										<img src="images/skripthub1024.png" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>SkriptHub Docs</h3>
+											</header>
+											<p>
+												这是由 SkriptHub 国外团队运营维护的Skript相关文档网站，如果对于Skript的语法内容不熟悉的话十分建议从这里进行查询。
+												SkriptHub Docs不仅包括了Skript原版各版本的的语法内容，而且还涵盖了大部分Skript扩展插件的相关语法，供您查阅。
+											</p>
+											<ul class="actions">
+												<li><a href="https://skripthub.net/docs/" class="button" target="_blank">点击查看</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://bbs.smgoro.top/" class="image">
+										<img src="images/imc1024.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Skript中文文档</h3>
+											</header>
+											<p>
+												这是由<a href="https://www.spigotmc.org/" target="_blank">IMC.RE团队</a>所运营维护的Skript中文文档，
+												其主旨是为广大Skript国人更加方便快捷的查询Skript相关语法内容，但还未完善，敬请期待。
+											</p>
+											<ul class="actions">
+												<li><a href="https://bbs.smgoro.top/skript" class="button" target="_blank">敬请期待</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://github.com/SkriptLang" class="image">
+										<img src="images/github.png" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>SkriptLang</h3>
+											</header>
+											<p>
+												这是由 Skript 官方团队运营维护的Skript的Github开源项目网址，在这里你可以查看到Skript官方团队所开发的
+												Skript源代码，更新日志以及最新构建版本。
+											</p>
+											<ul class="actions">
+												<li><a href="https://github.com/SkriptLang/Skript" class="button" target="_blank">点击查看</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Skript进阶：互通服务器</h2>
+									</header>
+									<p>
+										尽管Skript是专为Minecraft Java Edition的服务器设计的脚本语言，但是随着Geyser的出现以及Floodgate 2.0的开发，
+										使得Skript对Minecraft Bedrock Edition的玩家的识别，操作支持成为了可能。如果想要使用Skript来优化升级你的互通服务器，
+										欢迎查看如下教程，实现对玩家的设备识别，以及BE Form的调用等高阶功能吧！
+									</p>
+									<ul class="actions">
+										<li><a href="skxgeyser.html" class="button next">点击查看</a></li>
+									</ul>
+								</div>
+							</section>
+
+							<!-- Three -->
+								<section id="backhome">
+									<div class="inner">
+										<header class="major">
+											<h2>返回首页</h2>
+										</header>
+										<ul class="actions">
+											<li><a href="index.html" class="button next">点击返回首页</a></li>
+										</ul>
+									</div>
+								</section>
+
+					</div>
+
+				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/SkriptLang/Skript" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>-->
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Service 2022 by <a href="http://smgoro.top" target="_blank">SummerGoro</a></li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
