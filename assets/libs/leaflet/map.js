@@ -173,8 +173,10 @@
     };
 
     var BJData = [
-        [{name: '石家庄'}, {name: '成都', value: 90}],
-        [{name: '石家庄'}, {name: '佛山', value: 80}],
+        [{name: '石家庄'}, {name: '宿迁', value: 90}],
+        [{name: '宿迁'}, {name: '石家庄', value: 90}],
+        [{name: '宿迁'}, {name: '成都', value: 90}],
+        [{name: '宿迁'}, {name: '佛山', value: 80}],
         [{name: '佛山'}, {name: '石家庄', value: 80}],
         [{name: '石家庄'}, {name: '香港', value: 70}],
         [{name: '石家庄'}, {name: '美国', value: 60}],
