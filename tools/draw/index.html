@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excalidraw in browser</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@excalidraw/excalidraw/dist/excalidraw.development.js"></script>
+  </head>
+
+  <body style="margin:0px;width:100vw;height:100vh;overflow:hidden;" id="ExcalidrawAPP">
+    <script type="text/javascript">
+      const App = () => {
+    return React.createElement(
+      React.Fragment,
+      null,
+      React.createElement(
+        "div",
+        {
+          style: { height: "100vh" },
+        },
+        React.createElement(ExcalidrawLib.Excalidraw),
+      ),
+    );
+  };
+  const excalidrawWrapper = document.getElementById("ExcalidrawAPP");
+  const root = ReactDOM.createRoot(excalidrawWrapper);
+  root.render(React.createElement(App));
+    </script>
+  </body>
+</html>
