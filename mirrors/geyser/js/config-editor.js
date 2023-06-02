@@ -33,7 +33,7 @@ document.querySelector('#export').addEventListener('click', () => {
 //https://raw.githubusercontent.com/GeyserMC/Geyser/master/core/src/main/resources/config.yml
 document.querySelector('#default-load').addEventListener('click', () => {
   loaderVisible(true)
-  window.fetch('https://smgoro.top/geyser/config.yml').then((res) => {
+  window.fetch('https://goro.top/geyser/config.yml').then((res) => {
     return res.text()
   }).then((text) => {
     handleConfigLoad(text)
