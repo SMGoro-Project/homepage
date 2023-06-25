@@ -13,5 +13,5 @@
 [![Pull-pr](https://img.shields.io/github/issues-pr/SMGoro-Project/homepage?style=flat-square)](https://github.com/SMGoro-Project/homepage/pulls)
 [![Pull-pr-closed](https://img.shields.io/github/issues-pr-closed/SMGoro-Project/homepage?style=flat-square)](https://github.com/SMGoro-Project/homepage/pulls?q=is%3Apr+is%3Aclosed)
 
-2022 © [SMGoro-Project](https://github.com/SMGoro-Project) 
+2023 © [SMGoro-Project](https://github.com/SMGoro-Project) 
 
