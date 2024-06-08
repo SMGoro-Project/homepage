@@ -1,0 +1,402 @@
+<!--
+=========================================================
+* IMC.RE Web - v1.0.0
+=========================================================
+
+* Source code: https://github.com/SMGoro-Project/homepage
+* Copyright IMC.RE (https://imc.re)
+* Licensed under MIT
+
+* Template development based on BLK Design System
+* Product Page: https://www.creative-tim.com/product/blk-design-system
+
+=========================================================
+-->
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title class="lang" key="TITLE">
+    IMC.RE • Network
+  </title>
+  <!-- Nucleo Icons -->
+  <link href="/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="/assets/css/blk-design-system.css?v=1.0.0" rel="stylesheet" />
+</head>
+
+<body class="landing-page">
+  <!-- header -->
+  <div class="headerpage"></div>
+
+  <section class="section section-lg section-coins">
+    <img src="/assets/img/path3.png" class="path">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <hr class="line-info">
+              <h1>五郎云
+                  <span class="text-info">高频游戏云</span>
+              </h1>
+          </div>
+          <div class="col-lg-8">
+              <div class="row" id="config-list">
+              </div>
+          </div>
+          <div class="col-lg-4 mb-lg-auto">
+              <div class="card card-register">
+              <div class="card-header">
+                  <img class="card-img" src="/assets/img/square1.png" alt="Card image">
+                  <h4 class="card-title">价格明细</h4>
+              </div>
+              <div class="card-body">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-12">
+                              <label for="zone">可用区:</label>
+                              <select class="form-control" id="zone">
+                                  <option value="s_e5-2667v2">s_e5-2667v2</option>
+                                  <option value="s_i9-7940x">s_i9-7940x</option>
+                                  <option value="s_r9-5900x">s_r9-5900x</option>
+                                  <option value="s2_i7-12700k">s2_i7-12700k</option>
+                              </select>
+                          </div>
+                          <div class="col-6">
+                              <label for="cpu">CPU(vc):</label>
+                              <input class="form-control" type="number" id="cpu" placeholder="请输入CPU核心数（vc）" value="1">
+                          </div>
+                          <div class="col-6">
+                              <label for="memory">内存(GB):</label>
+                              <input class="form-control" type="number" id="memory" placeholder="请输入内存大小（GB）" value="1">
+                          </div>
+                          <div class="col-6">
+                              <label for="storage">硬盘(GB):</label>
+                              <input class="form-control" type="number" id="storage" placeholder="请输入硬盘大小（GB）" value="1">
+                          </div>
+                          <div class="col-6">
+                              <label for="bandwidth">带宽(Mbps):</label>
+                              <input class="form-control" type="number" id="bandwidth" placeholder="请输入带宽大小（Mbps）" value="1">
+                          </div>
+                          <div class="col-12">
+              
+                              <label for="paymentPeriod">付款时长（越久越优惠！）:</label>
+                              <select class="form-control" id="paymentPeriod">
+                                  <option value="1">月付</option>
+                                  <option value="3">季付（8折）</option>
+                                  <option value="12">年付（7折）</option>
+                              </select>
+                          </div>
+                          <hr class="line-info">
+                          <div class="col-12 text-right">
+                              <span id="detaild-price">
+                                  CPU: 1 x 12元/核 = 12元/月<br>
+                                  内存: 1 x 6元/GB = 6元/月<br>
+                                  硬盘: 1 x 0.8元/GB = 0.8元/月<br>
+                                  带宽: 1 x 1元/Mbps = 1元/月
+                              </span>
+                              <h2 id="result">总价:  <span id="total-price">19.80</span> <span style="font-size: 20px;">元</span></h2>
+                          </div>
+                  </div>
+                  </div>
+                  <form class="form">
+                  <div class="form-check text-left">
+                      <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox">
+                      <span class="form-check-sign"></span>
+                      同意我们的
+                      <a href="https://l.imc.re/terms">用户协议</a>.
+                      </label>
+                  </div>
+                  </form>
+              </div>
+              <div class="card-footer text-right">
+                <button class="btn btn-primary btn-lg" onclick="window.open('https://l.imc.re/contact')">点击购买</button>
+                  <button class="btn btn-info btn-lg" onclick="calculatePrice()">检查价格</button>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="section section-lg">
+    <div class="container align-items-center">
+      <div class="row row-grid align-items-center my-md">
+        <div class="col-md-12">
+          <hr class="line-info">
+          <h1>求稳定？
+              <span class="text-info">大厂云更适合你</span>
+          </h1>
+        </div>
+        <div class="col-lg-4">
+          <a href="https://curl.qcloud.com/dTmCwPM0" target="_blank">
+            <img src="/assets/img/gg/txy-345x200.png">
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="https://developer.aliyun.com/topic/ecs/huanshou?userCode=lmo5ilfu" target="_blank">
+            <img src="/assets/img/gg/ali-345x200.png">
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="https://ym.ksjhaoka.com/show?s=RbsnbESi81021&id=82341553" target="_blank">
+            <img src="/assets/img/gg/haoka-345x200.png">
+          </a>
+        </div>
+        <div class="col-lg-12">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4773172018528901"
+         crossorigin="anonymous"></script>
+          <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-format="autorelaxed"
+              data-ad-client="ca-pub-4773172018528901"
+              data-ad-slot="1569846667"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+        <br>
+      </div>
+    </div>
+  </section>
+      
+  <div class="section section-download" id="#download-section" data-background-color="black">
+    <img src="/assets/img/path1.png" class="path">
+    <div class="container">
+      <div class="row row-grid align-items-center my-md">
+        <div class="col-lg-6">
+          <h3 class="text-primary font-weight-light mb-2 lang" key="backhome-title-1">回去再看看？</h3>
+          <h4 class="mb-0 font-weight-light lang" key="backhome-description-1">点击按钮或菜单标题即可返回主页</h4>
+        </div>
+        <div class="col-lg-6 text-lg-center btn-wrapper">
+          <a href="/#" class="btn btn-primary btn-round btn-lg lang" key="backhome-button-1" role="button">
+            返回主页
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footerpage"></div>
+
+  <!--   Core JS Files   -->
+  <script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <!-- Chart JS -->
+  <script src="/assets/js/plugins/chartjs.min.js"></script>
+  <!-- Chart Config -->
+  <script src="/assets/template/charts/public/chart-public.js"></script>
+  <script>
+    $(document).ready(function() {
+      chart.initLandingPageChart();
+    });
+  </script>
+<!-- 公共部分引用 -->
+<script>
+    $(function(){
+        $(".headerpage").load('/module/header.html');
+        $(".footerpage").load("/module/footer.html");
+    });
+</script>    
+<script>
+  const pricing = {
+      's_e5-2667v2': {
+          cpu: 4,
+          memory: 3,
+          storage: 0.5,
+          bandwidth: 0
+      },
+      's_i9-7940x': {
+          cpu: 8,
+          memory: 6,
+          storage: 0.8,
+          bandwidth: 1
+      },
+      's_r9-5900x': {
+          cpu: 12,
+          memory: 8,
+          storage: 0.8,
+          bandwidth: 1
+      },
+      's2_i7-12700k': {
+          cpu: 16,
+          memory: 10,
+          storage: 1,
+          bandwidth: 3
+      }
+  };
+  const configs = [
+      {
+          "name": "土豆服",
+          "zone": "s_e5-2667v2",
+          "cpu": 1,
+          "memory": 1,
+          "storage": 5,
+          "bandwidth": 50,
+          "comment": "低价面板服，适合萌新开服"
+      },
+      {
+          "name": "草块服",
+          "zone": "s_i9-7940x",
+          "cpu": 1,
+          "memory": 1,
+          "storage": 0,
+          "bandwidth": 1,
+          "comment": "低价基础服，适合挂轻量业务"
+      },
+      {
+          "name": "木头服",
+          "zone": "s_i9-7940x",
+          "cpu": 2,
+          "memory": 4,
+          "storage": 10,
+          "bandwidth": 10,
+          "comment": "基础游戏服，适合朋友联机"
+      },
+      {
+          "name": "铁块服",
+          "zone": "s_r9-5900x",
+          "cpu": 2,
+          "memory": 6,
+          "storage": 0,
+          "bandwidth": 15,
+          "comment": "进阶基础服，单核高频需求"
+      },
+      {
+          "name": "金块服",
+          "zone": "s_r9-5900x",
+          "cpu": 4,
+          "memory": 8,
+          "storage": 20,
+          "bandwidth": 20,
+          "comment": "进阶游戏服，适合中型整合包"
+      },
+      {
+          "name": "钻石服",
+          "zone": "s2_i7-12700k",
+          "cpu": 3,
+          "memory": 12,
+          "storage": 50,
+          "bandwidth": 20,
+          "comment": "高级游戏服，适配高版本多人"
+      }
+  ];
+
+  function calculatePrice() {
+      const zone = document.getElementById('zone').value;
+      const cpu = parseInt(document.getElementById('cpu').value, 10);
+      const memory = parseInt(document.getElementById('memory').value, 10);
+      const storage = parseInt(document.getElementById('storage').value, 10);
+      const bandwidth = parseInt(document.getElementById('bandwidth').value, 10);
+      const paymentPeriod = document.getElementById('paymentPeriod').value;
+
+      const [originPrice, totalPrice] = ctPrice(zone, cpu, memory, storage, bandwidth);
+
+      if (paymentPeriod == 1) {
+          document.getElementById('result').innerHTML = `
+          总价:  <span id="total-price">${totalPrice}</span> <span style="font-size: 20px;">元</span>
+          `;
+          document.getElementById('detaild-price').innerHTML = `
+          CPU: ${cpu} x ${pricing[zone].cpu}元/核 = ${cpu * pricing[zone].cpu}元/月<br/>
+          内存: ${memory} x ${pricing[zone].memory}元/GB = ${memory * pricing[zone].memory}元/月<br/>
+          硬盘: ${storage} x ${pricing[zone].storage}元/GB = ${storage * pricing[zone].storage}元/月<br/>
+          带宽: ${bandwidth} x ${pricing[zone].bandwidth}元/Mbps = ${bandwidth * pricing[zone].bandwidth}元/月<br/>
+          `;
+      } else {
+          document.getElementById('result').innerHTML = `
+          总价:  <span id="total-price">${totalPrice}</span> <span style="font-size: 20px; text-decoration: line-through;" id="origin-price">${originPrice}</span> <span style="font-size: 20px;">元</span>
+          `;
+          document.getElementById('detaild-price').innerHTML = `
+          CPU: ${cpu} x ${pricing[zone].cpu}元/核 = ${cpu * pricing[zone].cpu}元/月<br/>
+          内存: ${memory} x ${pricing[zone].memory}元/GB = ${memory * pricing[zone].memory}元/月<br/>
+          硬盘: ${storage} x ${pricing[zone].storage}元/GB = ${storage * pricing[zone].storage}元/月<br/>
+          带宽: ${bandwidth} x ${pricing[zone].bandwidth}元/Mbps = ${bandwidth * pricing[zone].bandwidth}元/月<br/>
+          <strong>优惠价格: ${(originPrice - totalPrice).toFixed(2)}元/${paymentPeriod}个月</strong>
+          `;
+      }
+  }
+
+  function ctPrice(zone, cpu, memory, storage, bandwidth) {
+      const paymentPeriod = document.getElementById('paymentPeriod').value;
+      const basePrice = 
+          cpu * pricing[zone].cpu + 
+          memory * pricing[zone].memory + 
+          storage * pricing[zone].storage + 
+          bandwidth * pricing[zone].bandwidth;
+      let originPrice;
+      let totalPrice
+
+      if (paymentPeriod === '3') {
+          originPrice = basePrice * paymentPeriod;
+          totalPrice = originPrice * 0.8;
+      } else if (paymentPeriod === '12') {
+          originPrice = basePrice * paymentPeriod;
+          totalPrice = originPrice * 0.7;
+      } else {
+          originPrice = basePrice;
+          totalPrice = basePrice;
+      }
+
+      return [originPrice.toFixed(2), totalPrice.toFixed(2)];
+  }
+
+
+  function setConfig(zone, cpu, memory, storage, bandwidth) {
+      document.getElementById('zone').value = zone;
+      document.getElementById('cpu').value = cpu;
+      document.getElementById('memory').value = memory;
+      document.getElementById('storage').value = storage;
+      document.getElementById('bandwidth').value = bandwidth;
+  }
+
+  function displayConfigs() {
+      const configList = document.getElementById('config-list');
+      configs.forEach(config => {
+          const configDiv = document.createElement('div');
+          const name = config.name || '';
+          const zone = config.zone || '';
+          const cpu = config.cpu;
+          const memory = config.memory;
+          const storage = config.storage;
+          const bandwidth = config.bandwidth;
+          const comment = config.comment || '';
+          configDiv.classList.add('col-md-4');
+          configDiv.innerHTML = `
+            <div class="card card-coin card-plain">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <hr class="line-success">
+                    <h3 class="text-uppercase">${name}</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <ul class="list-group">
+                    <li class="list-group-item">可用区: ${zone}</li>
+                    <li class="list-group-item">CPU：${cpu} vc</li>
+                    <li class="list-group-item">内存：${memory} GB</li>
+                    <li class="list-group-item">系统盘：40 GB</li>
+                    <li class="list-group-item">数据盘：${storage} GB</li>
+                    <li class="list-group-item">带宽：${bandwidth} Mbps</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-footer text-center">
+                  <p>${comment}</p>
+                  <h4>总价：${ctPrice(zone, cpu, memory, storage, bandwidth)[0]} <span style="font-size: 15px;">元/月</span></h4>
+                  <button class="btn btn-success btn-simple" onclick="setConfig('${zone}', ${cpu}, ${memory}, ${storage}, ${bandwidth});calculatePrice()">点击查询</button>
+              </div>
+            </div>
+          `;
+          configList.appendChild(configDiv);
+      });
+  }
+  displayConfigs();
+
+
+</script>
+</body>
+
+</html>
