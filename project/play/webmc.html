@@ -54,13 +54,15 @@ ___ __  __  ____   ____  _____
         <h1>警告：且行且珍惜，切勿过度宣传</h1>
         <h2>加入通道现已恢复。</h2>
         <div class="text-lg-center btn-wrapper">
-          <a href="https://l.imc.re/afdian" class="btn btn-primary btn-round btn-lg lang" key="back-button-1" role="button">
-            赞助我们
+          <a href="https://games.imc.re" target="_blank" class="btn btn-primary btn-round btn-lg lang" key="back-button-1" role="button">
+            更多游戏
           </a>
         </div>
       </div>
     </div>
     
+    <div class="adpage"></div>
+
     <div class="section section-project our-project">
       <img src="/assets/img/path3.png" class="path">
       <div class="container">
@@ -136,6 +138,29 @@ ___ __  __  ____   ____  _____
       
     <div class="section section-download" id="#download-section" data-background-color="black">
       <div class="container">
+        <!-- Large modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <iframe src="https://games.imc.re/ngs/mcjs/play/eaglercraft/1.8.html" width="100%" height="500px" type="text/html"></iframe>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row row-grid align-items-center my-md">
           <div class="col-lg-6">
             <h3 class="text-primary font-weight-light mb-2 lang" key="back-title-1">回去再看看？</h3>
@@ -170,6 +195,7 @@ ___ __  __  ____   ____  _____
     $(function(){
         $(".headerpage").load('/module/header.html');
         $(".footerpage").load("/module/footer.html");
+        $(".adpage").load("/module/adpage.html");
     });
 </script>
 </body>

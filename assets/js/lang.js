@@ -111,7 +111,7 @@ var arrLang = {
       "team-position-owner": "项目策划/运营",
       "team-position-programmer": "服务器技术",
       "team-position-partner": "合作服主",
-      "team-member-description-1": "2017年开始进行开服活动，<strong>SMGoro Server的服务器硬件支持及运维，</strong>，<del>是划水多年的咸鱼鸽子一枚</del>。",
+      "team-member-description-1": "2017年开始进行开服活动，IMC的服务器硬件支持及运维，，是划水多年的咸鱼鸽子一枚。",
       "linkmc-title": "LinkMC 合作伙伴",
       "linkmc-description-1": "LinkMC是由 IMC.RE 参与组织的一项国际性的 Minecraft / Eaglercraft 服务器互联企划项目。将由来自不同国家的不同服务器的服主进行跨域互联，从而实现Minecraft服务器的进一步国际化的交流与发展。",
       "linkmc-description-2": "来自不同国家的服务器互相连接，互利共赢。",
