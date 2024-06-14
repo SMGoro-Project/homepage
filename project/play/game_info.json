@@ -1,0 +1,734 @@
+[
+    {
+        "title": "WebMC",
+        "desc": "MC网页版模拟器，支持手机操作",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/webmc/"
+    },
+    {
+        "title": "IMC WebClient",
+        "desc": "MC网页版模拟器，支持手机操作",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://w.imc.re/"
+    },
+    {
+        "title": "Eaglercraft 1.3",
+        "desc": "MC1.3全特性网页版，仅支持电脑",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/eaglercraft/1.3.html"
+    },
+    {
+        "title": "Eaglercraft 1.5",
+        "desc": "MC1.5全特性汉化网页版，仅支持电脑",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/eaglercraft/1.5.html"
+    },
+    {
+        "title": "EaglerX 1.8",
+        "desc": "MC1.8全特性网页版，仅支持电脑",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/eaglercraft/1.8.html"
+    },
+    {
+        "title": "MC-Classic",
+        "desc": "MC官方Classisc版本存档",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/Minecraft-Classic/index.html"
+    },
+    {
+        "title": "2DMC-Game",
+        "desc": "2D版MC网页版游戏",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/2DMinecraft-Game/index.html"
+    },
+    {
+        "title": "JS-MC",
+        "desc": "JS实现的MC网页版游戏",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/js-minecraft/"
+    },
+    {
+        "title": "3DMC",
+        "desc": "3D版MC",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/3DMinecraft/index.html"
+    },
+    {
+        "title": "CSS3DMC",
+        "desc": "使用CSS3D构筑的MC",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/CSS3DMinecraft/index.html"
+    },
+    {
+        "title": "MClone",
+        "desc": "MC Clone复刻版本",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/MinecraftClone/"
+    },
+    {
+        "title": "MClonev2",
+        "desc": "MC Clone复刻v2版本",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/Quick_MinecraftClone2/"
+    },
+    {
+        "title": "MineKhan",
+        "desc": "MC Khan复刻网页版本",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/MineKhan/"
+    },
+    {
+        "title": "WebCraft",
+        "desc": "WebCraft复刻网页版本",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/WebCraft/"
+    },
+    {
+        "title": "WebGLCraft",
+        "desc": "WebGLCraft 复刻网页版本",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/WebGLCraft/"
+    },
+    {
+        "title": "webmc.js.org",
+        "desc": "webmc.js.org复刻网页版本",
+        "img": "https://games.imc.re/assets/images/gicon/ymc.png",
+        "link": "https://games.imc.re/ngs/mcjs/play/webmc.js.org/"
+    },
+    {
+        "title": "Stack",
+        "desc": "经典搭高小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/ystack.png",
+        "link": "https://games.imc.re/ngs/stack/"
+    },
+    {
+        "title": "pokerogue",
+        "desc": "在线宝可梦对战小游戏",
+        "img": "https://pokerogue.net/logo512.png",
+        "link": "https://pokerogue.net/"
+    },
+    {
+        "title": "Sans-Fight",
+        "desc": "Undertale经典Boss战还原",
+        "img": "https://games.imc.re/assets/images/gicon/yc2-sans-fight.png",
+        "link": "https://games.imc.re/ngs/c2-sans-fight/"
+    },
+    {
+        "title": "小霸王游戏机",
+        "desc": "经典小霸王游戏在线游玩",
+        "img": "https://games.imc.re/assets/images/gicon/yjsnes.png",
+        "link": "https://games.imc.re/ngs/jsnes/"
+    },
+    {
+        "title": "城市消消乐",
+        "desc": "城市消消乐小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/ycsxxl.png",
+        "link": "https://games.imc.re/ngs/csxxl/"
+    },
+    {
+        "title": "超级马里奥",
+        "desc": "超级马里奥经典复刻",
+        "img": "https://games.imc.re/assets/images/gicon/ymario.png",
+        "link": "https://games.imc.re/ngs/mario/"
+    },
+    {
+        "title": "JoJo-Sans-Fight",
+        "desc": "Undertale经典Boss战联动JoJo同人作品",
+        "img": "https://games.imc.re/assets/images/gicon/yjosans-fight.png",
+        "link": "https://games.imc.re/ngs/josans-fight/"
+    },
+    {
+        "title": "东方绀珠传AEX",
+        "desc": "东方同人STG游戏网页版在线游玩",
+        "img": "https://games.imc.re/ngs/WeHou/img/demo8.jpg",
+        "link": "https://games.imc.re/ngs/WeHou/demo8/"
+    },
+    {
+        "title": "狸舞賀春短劇",
+        "desc": "东方同人STG游戏网页版在线游玩",
+        "img": "https://games.imc.re/ngs/WeHou/img/demo7.jpg",
+        "link": "https://games.imc.re/ngs/WeHou/demo7/"
+    },
+    {
+        "title": "秦心符卡STG化複刻",
+        "desc": "东方同人STG游戏网页版在线游玩",
+        "img": "https://games.imc.re/ngs/WeHou/img/demo6.jpg",
+        "link": "https://games.imc.re/ngs/WeHou/demo6/"
+    },
+    {
+        "title": "幻想格林尼治",
+        "desc": "东方同人STG游戏网页版在线游玩",
+        "img": "https://games.imc.re/ngs/WeHou/img/demo5.jpg",
+        "link": "https://games.imc.re/ngs/WeHou/demo5/"
+    },
+    {
+        "title": "曲綫激光祭",
+        "desc": "东方同人STG游戏网页版在线游玩",
+        "img": "https://games.imc.re/ngs/WeHou/img/demo4.jpg",
+        "link": "https://games.imc.re/ngs/WeHou/demo4/"
+    },
+    {
+        "title": "among-us",
+        "desc": "among-us网页版在线游玩",
+        "img": "https://games.imc.re/assets/images/gicon/yamong-us.png",
+        "link": "https://games.imc.re/ngs/among-us/"
+    },
+    {
+        "title": "Paperio2",
+        "desc": "Paperio2在线游戏",
+        "img": "https://games.imc.re/assets/images/gicon/ypaperio2.png",
+        "link": "https://games.imc.re/ngs/paperio2/"
+    },
+    {
+        "title": "1v1.lol",
+        "desc": "1v1.lol在线游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y1v1lol.png",
+        "link": "https://games.imc.re/ngs/1v1lol/"
+    },
+    {
+        "title": "人生重来模拟器",
+        "desc": "模拟人生重来，你会面临怎样的挑战？",
+        "img": "https://games.imc.re/assets/images/gicon/yrelife.png",
+        "link": "https://games.imc.re/ngs/relife/"
+    },
+    {
+        "title": "3D滚球",
+        "desc": "3D滚球小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y3dball.jpg",
+        "link": "https://games.imc.re/ngs/3Dball/"
+    },
+    {
+        "title": "2048",
+        "desc": "原版2048",
+        "img": "https://games.imc.re/assets/images/gicon/y10.png",
+        "link": "https://games.imc.re/ngs/2048/"
+    },
+    {
+        "title": "Dino3D",
+        "desc": "3D小恐龙跑酷游戏",
+        "img": "https://games.imc.re/assets/images/gicon/ydino3d.webp",
+        "link": "https://games.imc.re/ngs/dino3d/"
+    },
+    {
+        "title": "ricora-beats",
+        "desc": "日本的开源音游",
+        "img": "https://games.imc.re/assets/images/gicon/yricora.png",
+        "link": "https://beats.tus-ricora.com/"
+    },
+    {
+        "title": "Phitogether",
+        "desc": "多人联机音游",
+        "img": "https://phitogether.fun/favicon.ico",
+        "link": "https://phitogether.fun"
+    },
+    {
+        "title": "Phicommunity",
+        "desc": "Phigros模拟社区网页版",
+        "img": "https://games.imc.re/assets/images/gicon/yphi.png",
+        "link": "https://cf.phicommunity.com.cn/chapterSelect/"
+    },
+    {
+        "title": "OSUGame",
+        "desc": "OSU! 音游网页模拟器",
+        "img": "https://games.imc.re/assets/images/gicon/yosu.png",
+        "link": "https://osu-web.com/"
+    },
+    {
+        "title": "维京战争",
+        "desc": "超好玩的卡片战争游戏（小星汉化）",
+        "img": "https://games.imc.re/assets/images/gicon/y1.png",
+        "link": "https://games.imc.re/ngs/yxmb/1/index.html"
+    },
+    {
+        "title": "一个都不能死",
+        "desc": "分为4个模式，看看你的反应能力和手速怎么样吧",
+        "img": "https://games.imc.re/assets/images/gicon/y2.png",
+        "link": "https://games.imc.re/ngs/yxmb/2/index.html"
+    },
+    {
+        "title": "捕鱼达人",
+        "desc": "一共有七档，界面还原，赶快试试吧",
+        "img": "https://games.imc.re/assets/images/gicon/y3.png",
+        "link": "https://games.imc.re/ngs/yxmb/3/index.html"
+    },
+    {
+        "title": "植物大战僵尸",
+        "desc": "经典游戏还原，有两种模式选择",
+        "img": "https://games.imc.re/assets/images/gicon/y4.png",
+        "link": "https://games.imc.re/ngs/yxmb/4/index.html"
+    },
+    {
+        "title": "3D魔方",
+        "desc": "鼠标点击操作，三阶魔方形状通常是正方体",
+        "img": "https://games.imc.re/assets/images/gicon/y5.png",
+        "link": "https://games.imc.re/ngs/yxmb/5/index.html"
+    },
+    {
+        "title": "青蛙吃苍蝇",
+        "desc": "兼容PC端和移动端，背景音乐开关功能，白天晚上两种背景",
+        "img": "https://games.imc.re/assets/images/gicon/y6.png",
+        "link": "https://games.imc.re/ngs/yxmb/6/index.html"
+    },
+    {
+        "title": "蜘蛛纸牌",
+        "desc": "游戏的目标以最少的移动次数将牌面中的十叠牌及待发的五组",
+        "img": "https://games.imc.re/assets/images/gicon/y7.png",
+        "link": "https://games.imc.re/ngs/yxmb/7/index.html"
+    },
+    {
+        "title": "贪吃蛇",
+        "desc": "贪吃蛇游戏是一款经典的益智游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y8.png",
+        "link": "https://games.imc.re/ngs/yxmb/8/index.html"
+    },
+    {
+        "title": "水果消除",
+        "desc": "jQuery水果消除基于jquery.1.10.2.min.js制作（小星美化）",
+        "img": "https://games.imc.re/assets/images/gicon/y9.png",
+        "link": "https://games.imc.re/ngs/yxmb/9/index.html"
+    },
+    {
+        "title": "2048中文版",
+        "desc": "2048中文版小游戏基于jquery.1.10.2.min.js制作",
+        "img": "https://games.imc.re/assets/images/gicon/y10.png",
+        "link": "https://games.imc.re/ngs/yxmb/10/index.html"
+    },
+    {
+        "title": "大鱼吃小鱼",
+        "desc": "大鱼吃小鱼冒险游戏、手机小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y11.png",
+        "link": "https://games.imc.re/ngs/yxmb/11/index.html"
+    },
+    {
+        "title": "飞机大战",
+        "desc": "JS飞机大战网页版小游戏，鼠标控制战机攻击敌人",
+        "img": "https://games.imc.re/assets/images/gicon/y12.png",
+        "link": "https://games.imc.re/ngs/yxmb/12/index.html"
+    },
+    {
+        "title": "跑酷小游戏",
+        "desc": "HTML5跑酷小游戏，按键盘空格键跳跃",
+        "img": "https://games.imc.re/assets/images/gicon/y13.png",
+        "link": "https://games.imc.re/ngs/yxmb/13/index.html"
+    },
+    {
+        "title": "贪吃蛇2.0",
+        "desc": "JS网页版贪吃蛇小游戏，原生JS",
+        "img": "https://games.imc.re/assets/images/gicon/y14.png",
+        "link": "https://games.imc.re/ngs/yxmb/14/index.html"
+    },
+    {
+        "title": "射击鸭子",
+        "desc": "HTML5 canvas射击鸭子小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y15.png",
+        "link": "https://games.imc.re/ngs/yxmb/15/index.html"
+    },
+    {
+        "title": "激流勇进",
+        "desc": "HTML5 canvas激流勇进小游戏代码，迷宫逃生小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y16.png",
+        "link": "https://games.imc.re/ngs/yxmb/16/index.html"
+    },
+    {
+        "title": "天天消消乐",
+        "desc": "让三个及以上的同色小动物横竖相连即可消除",
+        "img": "https://games.imc.re/assets/images/gicon/y17.png",
+        "link": "https://games.imc.re/ngs/yxmb/17/index.html"
+    },
+    {
+        "title": "别踩白块",
+        "desc": "只要不是白块，一个个点吧，游戏速度随着时间增加而加快",
+        "img": "https://games.imc.re/assets/images/gicon/y18.png",
+        "link": "https://games.imc.re/ngs/yxmb/18/index.html"
+    },
+    {
+        "title": "线条生存",
+        "desc": "线条生存躲避游戏，移动鼠标，拖动线条，躲避白点，获得积分",
+        "img": "https://games.imc.re/assets/images/gicon/y19.png",
+        "link": "https://games.imc.re/ngs/yxmb/19/index.html"
+    },
+    {
+        "title": "打砖块射击",
+        "desc": "HTML5 canvas打砖块射击小游戏，颜色爆炸射击游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y20.png",
+        "link": "https://games.imc.re/ngs/yxmb/20/index.html"
+    },
+    {
+        "title": "保卫星球射击",
+        "desc": "星球防御游戏，太空战机为阻止星球遭遇小行星撞击",
+        "img": "https://games.imc.re/assets/images/gicon/y21.png",
+        "link": "https://games.imc.re/ngs/yxmb/21/index.html"
+    },
+    {
+        "title": "吃豆人",
+        "desc": "按［空格］开始或暂停、继续，键盘方向键进行游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y22.png",
+        "link": "https://games.imc.re/ngs/yxmb/22/index.html"
+    },
+    {
+        "title": "开心消消乐",
+        "desc": "支持PC端和移动端，一款三消游戏，游戏画面精美",
+        "img": "https://games.imc.re/assets/images/gicon/y23.jpg",
+        "link": "https://games.imc.re/ngs/yxmb/23/index.html"
+    },
+    {
+        "title": "俄罗斯方块",
+        "desc": "界面简洁，难度可选：简单、一般、困难，键盘操作",
+        "img": "https://games.imc.re/assets/images/gicon/y24.png",
+        "link": "https://games.imc.re/ngs/yxmb/24/index.html"
+    },
+    {
+        "title": "2048方块版",
+        "desc": "HTML5数字方块2048小游戏，兼容PC端和移动端",
+        "img": "https://games.imc.re/assets/images/gicon/y25.png",
+        "link": "https://games.imc.re/ngs/yxmb/25/index.html"
+    },
+    {
+        "title": "看图猜词",
+        "desc": "【不兼容PC端】更好体验请使用手机，多个关卡小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y26.png",
+        "link": "https://games.imc.re/ngs/yxmb/26/index.html"
+    },
+    {
+        "title": "弹球打砖块",
+        "desc": "弹球打砖块，左、右箭头键或移动鼠标，控制小球打砖块",
+        "img": "https://games.imc.re/assets/images/gicon/y27.png",
+        "link": "https://games.imc.re/ngs/yxmb/27/index.html"
+    },
+    {
+        "title": "小方块回家",
+        "desc": "基于jQuery.1.10.2.min.js制作，可以选关，共30关",
+        "img": "https://games.imc.re/assets/images/gicon/y28.png",
+        "link": "https://games.imc.re/ngs/yxmb/28/index.html"
+    },
+    {
+        "title": "双人五子棋",
+        "desc": "自适应分辨率，可随意调整棋盘大小，可设定棋盘规格（双人游戏）",
+        "img": "https://games.imc.re/assets/images/gicon/y29.png",
+        "link": "https://games.imc.re/ngs/yxmb/29/index.html"
+    },
+    {
+        "title": "射箭小游戏",
+        "desc": "TweenMax.min.js制作，鼠标控制射箭游戏，画一个箭头并发射它",
+        "img": "https://games.imc.re/assets/images/gicon/y30.png",
+        "link": "https://games.imc.re/ngs/yxmb/30/index.html"
+    },
+    {
+        "title": "飞机大战2.0",
+        "desc": "飞机大战小游戏，电脑和手机都可以玩，飞机自动发射子弹",
+        "img": "https://games.imc.re/assets/images/gicon/y31.png",
+        "link": "https://games.imc.re/ngs/yxmb/31/index.html"
+    },
+    {
+        "title": "简单闯关游戏",
+        "desc": "简单JS闯关小游戏，4个关卡，键盘上下左右操作闯关小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y32.png",
+        "link": "https://games.imc.re/ngs/yxmb/32/index.html"
+    },
+    {
+        "title": "重力球滚动",
+        "desc": "重力球滚动，用鼠标倾斜屏幕，将球体移动到正方形，当心地下的洞",
+        "img": "https://games.imc.re/assets/images/gicon/y33.png",
+        "link": "https://games.imc.re/ngs/yxmb/33/index.html"
+    },
+    {
+        "title": "头像迷阵消除",
+        "desc": "人物头像迷阵消除游戏，类似《宝石迷阵》类的方块消除类型小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y34.png",
+        "link": "https://games.imc.re/ngs/yxmb/34/index.html"
+    },
+    {
+        "title": "变色弹球跳台阶",
+        "desc": "HTML5变色弹球跳台阶小游戏，点击台阶可变换红，黄，紫等颜色台阶",
+        "img": "https://games.imc.re/assets/images/gicon/y35.png",
+        "link": "https://games.imc.re/ngs/yxmb/35/index.html"
+    },
+    {
+        "title": "最强眼力",
+        "desc": "很经典的猜谜小游戏，有三个杯子，猜猜金币在哪个杯子里",
+        "img": "https://games.imc.re/assets/images/gicon/y36.png",
+        "link": "https://games.imc.re/ngs/yxmb/36/index.html"
+    },
+    {
+        "title": "俄罗斯方块2.0",
+        "desc": "俄罗斯方块2.0面向对象方式写的，彩色俄罗斯方块游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y37.png",
+        "link": "https://games.imc.re/ngs/yxmb/37/index.html"
+    },
+    {
+        "title": "双人五子棋2.0",
+        "desc": "自适应分辨率，原生js和canvas实现五子棋小游戏（双人游戏）",
+        "img": "https://games.imc.re/assets/images/gicon/y38.png",
+        "link": "https://games.imc.re/ngs/yxmb/38/index.html"
+    },
+    {
+        "title": "小人推箱子",
+        "desc": "原生JS编写，移动小人，把箱子全部推到小球的位置即可过关",
+        "img": "https://games.imc.re/assets/images/gicon/y39.png",
+        "link": "https://games.imc.re/ngs/yxmb/39/index.html"
+    },
+    {
+        "title": "经典扫雷",
+        "desc": "扫雷基于jquery.1.10.2.min.js制作，计时，有十面红旗标注雷区",
+        "img": "https://games.imc.re/assets/images/gicon/y40.jpg",
+        "link": "https://games.imc.re/ngs/yxmb/40/index.html"
+    },
+    {
+        "title": "英雄宝石块消消乐",
+        "desc": "上手简单，只需让三个及以上的同色人物横竖相连即可消除",
+        "img": "https://games.imc.re/assets/images/gicon/y41.png",
+        "link": "https://games.imc.re/ngs/yxmb/41/index.html"
+    },
+    {
+        "title": "赛车游戏",
+        "desc": "HTML5 Canvas赛车游戏动画，赛车游戏动画演示",
+        "img": "https://games.imc.re/assets/images/gicon/y42.png",
+        "link": "https://games.imc.re/ngs/yxmb/42/index.html"
+    },
+    {
+        "title": "大家来找茬",
+        "desc": "一款经典的游戏，在限定时间内，找出两幅图的不同之处",
+        "img": "https://games.imc.re/assets/images/gicon/y43.png",
+        "link": "https://games.imc.re/ngs/yxmb/43/index.html"
+    },
+    {
+        "title": "经典扫雷2.0",
+        "desc": "最短的时间内点击格子出现的数字找出所有非雷格子，同时避免踩雷",
+        "img": "https://games.imc.re/assets/images/gicon/y44.png",
+        "link": "https://games.imc.re/ngs/yxmb/44/index.html"
+    },
+    {
+        "title": "锅打灰太狼",
+        "desc": "游戏时间:60s，拼手速，殴打灰太狼+10分，殴打小灰灰-10分",
+        "img": "https://games.imc.re/assets/images/gicon/y45.png",
+        "link": "https://games.imc.re/ngs/yxmb/45/index.html"
+    },
+    {
+        "title": "3D飞机躲避障",
+        "desc": "3D飞机躲避障碍游戏，鼠标控制飞行的飞机，躲避障碍（小星汉化）",
+        "img": "https://games.imc.re/assets/images/gicon/y46.png",
+        "link": "https://games.imc.re/ngs/yxmb/46/index.html"
+    },
+    {
+        "title": "兔子吃月饼",
+        "desc": "HTML5兔子吃月饼小游戏，适应手机端，用鼠标操控进行游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y47.png",
+        "link": "https://games.imc.re/ngs/yxmb/47/index.html"
+    },
+    {
+        "title": "接金币",
+        "desc": "HTML5接金币小游戏，鼠标控制人物左右移动进行操作",
+        "img": "https://games.imc.re/assets/images/gicon/y48.png",
+        "link": "https://games.imc.re/ngs/yxmb/48/index.html"
+    },
+    {
+        "title": "灌篮高手",
+        "desc": "樱木花道的篮球主场30秒投篮，按住屏幕，力度条在红色区域时松手投篮",
+        "img": "https://games.imc.re/assets/images/gicon/y49.png",
+        "link": "https://games.imc.re/ngs/yxmb/49/index.html"
+    },
+    {
+        "title": "疯狂打企鹅",
+        "desc": "HTML5疯狂打企鹅手机游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y50.png",
+        "link": "https://games.imc.re/ngs/yxmb/50/index.html"
+    },
+    {
+        "title": "吃月饼大赛",
+        "desc": "中秋吃月饼大赛游戏，鼠标点击进行游戏，在一定的时间内看谁吃的多",
+        "img": "https://games.imc.re/assets/images/gicon/y51.png",
+        "link": "https://games.imc.re/ngs/yxmb/51/index.html"
+    },
+    {
+        "title": "坦克大战",
+        "desc": "以坦克战斗及保卫基地为主题，可一人游戏或两人进行游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y52.png",
+        "link": "https://games.imc.re/ngs/yxmb/52/index.html"
+    },
+    {
+        "title": "图像之谜拼图",
+        "desc": "游戏分为简单、中等、困难，三个难度等级，记录操作步骤，纯html编写",
+        "img": "https://games.imc.re/assets/images/gicon/y53.png",
+        "link": "https://games.imc.re/ngs/yxmb/53/index.html"
+    },
+    {
+        "title": "消除QQ表情",
+        "desc": "消除QQ表情小游戏，你的手速有多快？",
+        "img": "https://games.imc.re/assets/images/gicon/y54.png",
+        "link": "https://games.imc.re/ngs/yxmb/54/index.html"
+    },
+    {
+        "title": "飞机躲避",
+        "desc": "HTML5游戏，长按屏幕飞机向上飞行，撞击障碍物游戏失败",
+        "img": "https://games.imc.re/assets/images/gicon/y55.png",
+        "link": "https://games.imc.re/ngs/yxmb/55/index.html"
+    },
+    {
+        "title": "3D熊出没",
+        "desc": "3D熊出没手机游戏基于HTML5 canvas制作，手机触屏操作更好",
+        "img": "https://games.imc.re/assets/images/gicon/y56.png",
+        "link": "https://games.imc.re/ngs/yxmb/56/index.html"
+    },
+    {
+        "title": "3D拼图魔方",
+        "desc": "3D拼图魔方游戏基于HTML5 canvas制作，一共12关",
+        "img": "https://games.imc.re/assets/images/gicon/y57.png",
+        "link": "https://games.imc.re/ngs/yxmb/57/index.html"
+    },
+    {
+        "title": "3D拳王拳击",
+        "desc": "3D拳王拳击游戏基于HTML5 canvas制作，支持鼠标操作",
+        "img": "https://games.imc.re/assets/images/gicon/y58.png",
+        "link": "https://games.imc.re/ngs/yxmb/58/index.html"
+    },
+    {
+        "title": "围住神经猫",
+        "desc": "基于HTML5 canvas、egret_loader.js和jquery.min.js等技术制作",
+        "img": "https://games.imc.re/assets/images/gicon/y59.png",
+        "link": "https://games.imc.re/ngs/yxmb/59/index.html"
+    },
+    {
+        "title": "2048军旗版",
+        "desc": "2048军旗版游戏，基于html5+js制作。键盘上下左右按键，开始游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y60.png",
+        "link": "https://games.imc.re/ngs/yxmb/60/index.html"
+    },
+    {
+        "title": "打地鼠",
+        "desc": "打地鼠小游戏是基于HTML5 Canvas和Audio开发的小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y61.png",
+        "link": "https://games.imc.re/ngs/yxmb/61/index.html"
+    },
+    {
+        "title": "驴子跳跳",
+        "desc": "很漂亮的一款HTML5+CSS3游戏，还配有音乐，很酷很刺激",
+        "img": "https://games.imc.re/assets/images/gicon/y62.png",
+        "link": "https://games.imc.re/ngs/yxmb/62/index.html"
+    },
+    {
+        "title": "压扁像素小鸟",
+        "desc": "你恨flappy bird吗?你每天晚上对着那个愚蠢的鸟做噩梦吗？压扁它们！",
+        "img": "https://games.imc.re/assets/images/gicon/y63.png",
+        "link": "https://games.imc.re/ngs/yxmb/63/index.html"
+    },
+    {
+        "title": "像素小鸟飞行",
+        "desc": "游戏中玩家必须控制一只胖乎乎的小鸟，跨越由各种不同长度水管组成的障碍",
+        "img": "https://games.imc.re/assets/images/gicon/y64.png",
+        "link": "https://games.imc.re/ngs/yxmb/64/index.html"
+    },
+    {
+        "title": "中国象棋",
+        "desc": "HTML5+JS编写，效果很逼真，一点也不会出现卡的情况效果相当不错（小星美化）",
+        "img": "https://games.imc.re/assets/images/gicon/y65.png",
+        "link": "https://games.imc.re/ngs/yxmb/65/index.html"
+    },
+    {
+        "title": "经典飞机大战",
+        "desc": "经典飞机大战是一款JS模仿微信打飞机游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y66.png",
+        "link": "https://games.imc.re/ngs/yxmb/66/index.html"
+    },
+    {
+        "title": "简约打地鼠",
+        "desc": "一款锻炼反应能力的打地鼠手机小游戏（只适应手机端）",
+        "img": "https://games.imc.re/assets/images/gicon/y67.png",
+        "link": "https://games.imc.re/ngs/yxmb/67/index.html"
+    },
+    {
+        "title": "切积木",
+        "desc": "切积木益智游戏是一款基于canvas画布制作切换积木立方体游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y68.png",
+        "link": "https://games.imc.re/ngs/yxmb/68/index.html"
+    },
+    {
+        "title": "见缝插口红",
+        "desc": "见缝插口红手机游戏是一款口红西瓜见缝插针手机游戏（直男福利）",
+        "img": "https://games.imc.re/assets/images/gicon/y69.png",
+        "link": "https://games.imc.re/ngs/yxmb/69/index.html"
+    },
+    {
+        "title": "记忆小游戏",
+        "desc": "记忆小游戏代码是一款基于svg卡通图标匹配记忆游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y70.png",
+        "link": "https://games.imc.re/ngs/yxmb/70/index.html"
+    },
+    {
+        "title": "看图猜词2.0",
+        "desc": "给你一张图片，在下列文字里选择组合一个成语，答对进入下一关（手机端更好）",
+        "img": "https://games.imc.re/assets/images/gicon/y71.png",
+        "link": "https://games.imc.re/ngs/yxmb/71/index.html"
+    },
+    {
+        "title": "萝卜载兔子飞行",
+        "desc": "基于canvas绘制的3D兔子载着胡萝卜飞行穿过云层的游戏，单击鼠标拖动控制方向",
+        "img": "https://games.imc.re/assets/images/gicon/y72.png",
+        "link": "https://games.imc.re/ngs/yxmb/72/index.html"
+    },
+    {
+        "title": "16宫格翻牌匹配",
+        "desc": "一款16宫格的翻牌图标匹配游戏，翻开两个图标一样，进行匹配小游戏",
+        "img": "https://games.imc.re/assets/images/gicon/y73.png",
+        "link": "https://games.imc.re/ngs/yxmb/73/index.html"
+    },
+    {
+        "title": "一笔连珠",
+        "desc": "点击每个圆珠来让线段进行连接，不可重复点亮，全部点亮即闯关成功",
+        "img": "https://games.imc.re/assets/images/gicon/y74.png",
+        "link": "https://games.imc.re/ngs/yxmb/74/index.html"
+    },
+    {
+        "title": "森林协奏曲",
+        "desc": "鼠标点击消除箱子等物体使动物们团圆，游戏加载完毕点击开始游戏（50个关卡）",
+        "img": "https://games.imc.re/assets/images/gicon/y75.png",
+        "link": "https://games.imc.re/ngs/yxmb/75/index.html"
+    },
+    {
+        "title": "斗地主",
+        "desc": "由三人玩，地主是一方，其余两家为另一方，双方对战，先出完的一方胜",
+        "img": "https://games.imc.re/assets/images/gicon/y76.png",
+        "link": "https://games.imc.re/ngs/yxmb/76/index.html"
+    },
+    {
+        "title": "飞机加减速",
+        "desc": "一款基于HTML5 Canvas实现的小游戏，圆形的加速，方形减速（手机端更好）",
+        "img": "https://games.imc.re/assets/images/gicon/y77.png",
+        "link": "https://games.imc.re/ngs/yxmb/77/index.html"
+    },
+    {
+        "title": "响应式翻牌",
+        "desc": "一款支持PC端跟手机端的小游戏，选择2个一样的即可抵消",
+        "img": "https://games.imc.re/assets/images/gicon/y78.png",
+        "link": "https://games.imc.re/ngs/yxmb/78/index.html"
+    },
+    {
+        "title": "天降红包雨",
+        "desc": "疯狂抢红包，天降红包雨，看看你的手速怎么样？抢到手软",
+        "img": "https://games.imc.re/assets/images/gicon/y79.png",
+        "link": "https://games.imc.re/ngs/yxmb/79/index.html"
+    },
+    {
+        "title": "健康消消乐",
+        "desc": "一款三消类休闲游戏，游戏画面精美、上手简单（手机端更好）",
+        "img": "https://games.imc.re/assets/images/gicon/y80.png",
+        "link": "https://games.imc.re/ngs/yxmb/80/index.html"
+    },
+    {
+        "title": "Q1K3",
+        "desc": "一个轻量3D FPS游戏",
+        "img": "https://games.imc.re/assets/images/gicon/ydos.svg",
+        "link": "https://phoboslab.org/q1k3/"
+    },
+    {
+        "title": "Flash保存计划",
+        "desc": "浏览器不支持Flash也能游玩Flash游戏！",
+        "img": "https://games.imc.re/assets/images/gicon/yflash.png",
+        "link": "https://flash.zczc.cz/"
+    },
+    {
+        "title": "在线DOS游戏",
+        "desc": "DOS经典游戏在线游玩",
+        "img": "https://games.imc.re/assets/images/gicon/ydos.svg",
+        "link": "https://dos.zczc.cz/"
+    }
+]

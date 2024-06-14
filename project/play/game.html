@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title class="lang" key="TITLE">
+    IMC.RE • Network
+  </title>
+  <!-- Nucleo Icons -->
+  <link href="https://imc.re/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="https://imc.re/assets/css/blk-design-system.css?v=1.0.0" rel="stylesheet" />
+</head>
+
+<body class="landing-page">
+  <!-- header -->
+  <div class="headerpage"></div>
+
+  <section class="section-md section-coins">
+    <img src="https://imc.re/assets/img/path3.png" class="path">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 card">
+                <div class="card-body" id="screen-zone">
+                    <!-- <iframe id="game-screen" 
+                    title="Minecraft"
+                    src="https://games.imc.re/ngs/mcjs/play/eaglercraft/1.8.html" 
+                    width="100%" height="600" 
+                    frameborder="0" scrolling="no" allowfullscreen="true"
+                    style="border-radius: 5px;"></iframe> -->
+                </div>
+                <div class="card-footer text-right">
+                    <button class="btn btn-primary btn-simple" id="click-fullscreen">点击全屏</button>
+                    <button class="btn btn-info btn-simple" id="refresh">点击刷新</button>
+                    <button class="btn btn-success btn-simple" id="newpage">打开新页</button>
+                </div>
+            </div>
+            <div class="card col-md-2 text-center">
+              <div class="card-body">
+                <h3 class="info-title lang" key="game-list-title">其他游戏</h3>
+                <hr class="line-info mt-0 mb-2 ml-0 mr-0" style="width: 100%;">
+                  <div class="row" id="game-list2">
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+                <hr class="line-info">
+                <h1>网络游戏
+                    <span class="text-info">在线玩</span>
+                </h1>
+            </div>
+            <div class="col-lg-12">
+                <div class="row" id="game-list">
+                </div>
+            </div>
+        </div>
+  </div>
+  </section>
+
+  <div class="adpage"></div>
+      
+  <div class="section section-download" id="#download-section" data-background-color="black">
+    <img src="https://imc.re/assets/img/path1.png" class="path">
+    <div class="container">
+      <div class="row row-grid align-items-center my-md">
+        <div class="col-lg-6">
+          <h3 class="text-primary font-weight-light mb-2 lang" key="backhome-title-1">回去再看看？</h3>
+          <h4 class="mb-0 font-weight-light lang" key="backhome-description-1">点击按钮或菜单标题即可返回主页</h4>
+        </div>
+        <div class="col-lg-6 text-lg-center btn-wrapper">
+          <a href="/#" class="btn btn-primary btn-round btn-lg lang" key="backhome-button-1" role="button">
+            返回主页
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footerpage"></div>
+
+  <!--   Core JS Files   -->
+  <script src="https://imc.re/assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="/assets/js/games-list.js" type="text/javascript"></script>
+<!-- 公共部分引用 -->
+<script>
+    $(function(){
+        $(".headerpage").load('/module/header.html');
+        $(".footerpage").load("/module/footer.html");
+        $(".adpage").load("/module/adpage.html");
+        loadGames(["game_info.json"], ['game-list'], "col-md-3", 12);
+        randomGames(["game_info.json"], ['game-list2'], "col-md-12", 5);
+    });
+</script>    
+<script>
+
+    function getURLParameter(name) {
+      var queryParams = window.location.search.substring(1);
+      var params = queryParams.split('&');
+      for (var i = 0; i < params.length; i++) {
+        var param = params[i].split('=');
+        if (param[0] === name) {
+          return decodeURIComponent(param[1]);
+        }
+      }
+      return null;
+    }
+
+    let gameurl = getURLParameter('url') || 'https://imc.re/'; // 默认加载第一个游戏
+    let gamename = getURLParameter('name') || '';
+    window.onload = function() {
+      const gamezone = document.getElementById('screen-zone');
+      const gameiframe = document.createElement('iframe');
+      gameiframe.id = 'game-screen';
+      gameiframe.title= gamename;
+      gameiframe.src = gameurl;
+      gameiframe.width = '100%';
+      gameiframe.height = '600';
+      gameiframe.style = 'border-radius: 5px;';
+      gameiframe.onload = function() {
+        const gameScreen = document.getElementById('game-screen');
+        const gameWindow = gameScreen.contentWindow;
+        fullscreen(gameScreen);
+      };
+      const nameshow = document.createElement('h3');
+      nameshow.innerHTML = `
+        ${gamename}
+        <hr class="line-info">
+        `;
+      gamezone.appendChild(nameshow);
+      gamezone.appendChild(gameiframe);
+    };
+
+    const clickFullscreen = document.getElementById('click-fullscreen');
+    const screen = document.getElementById('game-screen');
+    const refresh = document.getElementById('refresh');
+
+    function loadAndRefreshIframe(iframeId, url) {
+        var iframe = document.getElementById(iframeId);
+        iframe.contentWindow.location.href = url;
+        iframe.contentWindow.location.reload();
+    }
+
+    // 全屏
+    clickFullscreen.addEventListener('click', () => {
+        fullscreen('game-screen');
+    });
+
+    function fullscreen(input_screen) {
+        const fscreen = document.getElementById(input_screen);
+        if (document.fullscreenElement) {
+            document.exitFullscreen();
+        } else {
+            fscreen.requestFullscreen();
+        }
+    }
+
+    // 刷新
+    refresh.addEventListener('click', function() {
+        // iframe.contentWindow.location.reload();
+        window.location.reload();
+    });
+
+    document.getElementById('newpage').addEventListener('click', function() {
+        window.open(gameurl);
+    });
+
+</script>
+</body>
+
+</html>

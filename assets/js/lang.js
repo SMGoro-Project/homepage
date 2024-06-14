@@ -164,7 +164,7 @@ var arrLang = {
     }
   };
   
-  // The default language is English
+  // The default language
   var lang = "cn";
   // Check for localStorage support
   if('localStorage' in window){
