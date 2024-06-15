@@ -2,33 +2,38 @@ async function searchQuestions() {
     const response = await fetch('combined-all-exams.json');
     const allExams = await response.json();
 
-    const searchTerm = document.getElementById('searchTerm').value;
+    const searchTermQuestion = document.getElementById('searchTermQuestion').value;
+    const searchTermChoice = document.getElementById('searchTermChoice').value;
     const matches = [];
 
     for (const exam of allExams) {
         for (const question of exam.paper_data.question_data) {
-            const score = similar(searchTerm, question.question_stem);
-            if (score > 0.5) {
-                matches.push(question);
+            const scoreQuestion = similar(searchTermQuestion, question.question_stem);
+            if (scoreQuestion > 0.5) {
+                matches.push({score: scoreQuestion, question: question});
             }
 
             for (const choice of question.choices) {
-                const score = similar(searchTerm, choice.content);
-                if (score > 0.5) {
-                    matches.push(question);
+                const scoreChoice = similar(searchTermChoice, choice.content);
+                if (scoreChoice > 0.5) {
+                    matches.push({score: scoreChoice, question: question});
                 }
             }
         }
     }
 
+    // 按照匹配程度从高到低排序
+    matches.sort((a, b) => b.score - a.score);
+
     if (matches.length > 0) {
         let result = '';
-        for (const match of matches) {
-            result += `找到匹配的题目：\n题目ID：${match.question_id}\n题目：${match.question_stem}\n选项：\n`;
-            for (const choice of match.choices) {
+        // 最多列出三条
+        for (const match of matches.slice(0, 5)) {
+            result += `找到匹配的题目：\n题目ID：${match.question.question_id}\n题目：${match.question.question_stem}\n选项：\n`;
+            for (const choice of match.question.choices) {
                 result += `${choice.option}. ${choice.content}\n`;
             }
-            result += `正确答案：${match.correct_answer}\n\n`;
+            result += `正确答案：${match.question.correct_answer}\n匹配程度：${match.score}\n\n`;
         }
         document.getElementById('result').innerText = result;
     } else {
