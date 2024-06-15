@@ -1,5 +1,5 @@
 async function searchQuestions() {
-    const response = await fetch('combined-all-exams.json');
+    const response = await fetch('data.json');
     const allExams = await response.json();
 
     const searchTermQuestion = document.getElementById('searchTermQuestion').value;
