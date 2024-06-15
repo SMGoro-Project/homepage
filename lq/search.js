@@ -3,33 +3,33 @@ async function searchQuestions() {
     const allExams = await response.json();
 
     const searchTerm = document.getElementById('searchTerm').value;
-    let bestMatch = null;
-    let bestMatchScore = 0;
+    const matches = [];
 
     for (const exam of allExams) {
         for (const question of exam.paper_data.question_data) {
             const score = similar(searchTerm, question.question_stem);
-            if (score > bestMatchScore) {
-                bestMatch = question;
-                bestMatchScore = score;
+            if (score > 0.5) {
+                matches.push(question);
             }
 
             for (const choice of question.choices) {
                 const score = similar(searchTerm, choice.content);
-                if (score > bestMatchScore) {
-                    bestMatch = question;
-                    bestMatchScore = score;
+                if (score > 0.5) {
+                    matches.push(question);
                 }
             }
         }
     }
 
-    if (bestMatch) {
-        let result = `找到最匹配的题目：\n题目ID：${bestMatch.question_id}\n题目：${bestMatch.question_stem}\n选项：\n`;
-        for (const choice of bestMatch.choices) {
-            result += `${choice.option}. ${choice.content}\n`;
+    if (matches.length > 0) {
+        let result = '';
+        for (const match of matches) {
+            result += `找到匹配的题目：\n题目ID：${match.question_id}\n题目：${match.question_stem}\n选项：\n`;
+            for (const choice of match.choices) {
+                result += `${choice.option}. ${choice.content}\n`;
+            }
+            result += `正确答案：${match.correct_answer}\n\n`;
         }
-        result += `正确答案：${bestMatch.correct_answer}`;
         document.getElementById('result').innerText = result;
     } else {
         document.getElementById('result').innerText = "没有找到匹配的题目。";
