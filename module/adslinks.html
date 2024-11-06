@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMC URL</title>
+<script src="/assets/js/imc-main.js"></script>
+<script>
+var ty = getURLParameter('ty');
+// 读取base64数据解析为字符串
+
+var tolink = getURLParameter('tolink');
+
+// 页面加载时执行
+window.onload = function() {
+    loadIMCMain();
+    var ty = getURLParameter('ty'); // 确保这个值是从URL中获取的
+    if (ty === 'loc') {
+        adLoad();
+    }
+};
+
+// 页面卸载前执行
+window.onbeforeunload = function() {
+    localStorage.setItem('visited', 0);
+};
+
+// 检查tolink是否存在以及访问次数，并执行相应的跳转
+function adLoad() {
+    var visited = parseInt(localStorage.getItem('visited')) || 0;
+    if (tolink) {
+        if (visited <= 0) {
+            redirectToLinks(ty);
+        } else {
+            redirectToLinks(ty, tolink);
+        }
+        localStorage.setItem('visited', visited + 1);
+    } else {
+        redirectToLinks();
+    }
+}
+</script>
+</head>
+<body>
+<center>
+    <h1>IMC URL</h1>
+    <p>IMC链接跳转页面，正在跳转中... 如页面没有自动跳转，请
+         <button onclick="adLoad()"><h2>点击这里</h2></button> 跳转
+        </p>
+    <a>如未跳转至正确页面，多试几次即可</a>
+</center>
+</body>
+</html>
