@@ -6,6 +6,13 @@
 <title>IMC URL</title>
 <script src="/assets/js/imc-main.js"></script>
 <script>
+var links = [
+    'https://l.imc.re/adsterra',
+    'https://l.imc.re/pddcpa',
+    'https://l.imc.re/haoka',
+    'https://l.imc.re/ad'
+];
+
 var ty = getURLParameter('ty');
 // 读取base64数据解析为字符串
 
@@ -45,6 +52,33 @@ function adLoad() {
         redirectToLinks();
     }
 }
+
+function getURLParameter(name) {
+    var queryParams = window.location.search.substring(1);
+    var params = queryParams.split('&');
+    for (var i = 0; i < params.length; i++) {
+        var param = params[i].split('=');
+        if (param[0] === name) {
+        return decodeURIComponent(param[1]);
+        }
+    }
+    return null;
+}
+
+function redirectToLinks(t,u) {
+    if (u == undefined) {
+        var randomIndex = Math.floor(Math.random() * links.length);
+        url = links[randomIndex];
+    } else {
+        url = u;
+    }
+
+    if (t == 'win') {
+        window.open(url, '_blank');
+    } else {
+        window.location.href = url;
+    }
+};
 </script>
 </head>
 <body>
