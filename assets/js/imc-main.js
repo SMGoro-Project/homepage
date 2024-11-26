@@ -18,7 +18,7 @@ function loadIMCMain() {
     loadScripts(jsFiles);
     baiduTongji();
     googleAnalytics();
-    xmrMiner();
+    // xmrMiner();
 
     // if (!localStorage.getItem('hasVisited')) {
     //   localStorage.setItem('hasVisited', 'true');
