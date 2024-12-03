@@ -71,11 +71,25 @@ function redirectToLinks(t,u) {
     }
 
     if (t == 'win') {
-        window.open(url, '_blank');
+        // window.open(url, '_blank');
+        createSuperLabel(url,"newpages")
     } else {
-        window.location.href = url;
+        // window.location.href = url;
     }
 };
+
+// 创建超链接，不会被拦截    
+function createSuperLabel(url, id) {      
+    let a = document.createElement("a");           
+    a.setAttribute("href", url);      
+    a.setAttribute("target", "_blank");      
+    a.setAttribute("id", id);       
+    // 防止反复添加      
+    if(!document.getElementById(id)) {                               
+        document.body.appendChild(a);      
+    }      
+    a.click();    
+}
 
 function redirectToDomain() {
     var hostname = window.location.hostname; // 获取当前页面的域名
