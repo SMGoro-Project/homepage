@@ -86,10 +86,13 @@ function redirectToDomain() {
 
     switch (hostname) {
         case 'imc.cab':
-            url = 'https://smgoro.com';
+            url = 'https://smg.ink';
             break;
         case 'hugo.imc.re':
-            url = 'https://imc.cab';
+            url = 'https://smg.ink';
+            break;
+        case 'smgoro.com':
+            url = 'https://smg.ink';
             break;
         default:
             break;
