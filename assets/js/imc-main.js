@@ -27,14 +27,14 @@ function loadIMCMain() {
 function adShow() {
     if (!localStorage.getItem('hasVisited')) {
       localStorage.setItem('hasVisited', 'true');
-      redirectToLinks('loc');
-    }
+    //   redirectToLinks('loc');
 
-    var randomNumber = Math.random();
-    if (randomNumber >= 0.8) {
-        redirectToLinks('loc');
-    } else {
-        redirectToLinks('win');
+      var randomNumber = Math.random();
+      if (randomNumber >= 0.8) {
+          redirectToLinks('loc');
+      } else {
+          redirectToLinks('win');
+      }
     }
 
     var ads = getURLParameter('ads');
