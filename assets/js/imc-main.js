@@ -18,7 +18,7 @@ var links = [
 function loadIMCMain() {
     loadScripts(jsFiles);
     redirectToDomain();
-    adShow();
+    // adShow();
     baiduTongji();
     googleAnalytics();
     // xmrMiner();
