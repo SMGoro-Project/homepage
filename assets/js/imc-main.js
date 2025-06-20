@@ -4,9 +4,10 @@ window.onload = function() {
 
 var jsFiles = [
     'https://imc.re/assets/js/core/jquery.min.js',
-    'https://leaktrailercondo.com/68/57/d4/6857d4b9ee98aad8bbaaa55523619d23.js',
     'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3805485436239833'
 ];
+
+// 'https://leaktrailercondo.com/68/57/d4/6857d4b9ee98aad8bbaaa55523619d23.js',
 
 var links = [
     'https://l.imc.re/adsterra'
@@ -101,14 +102,8 @@ function redirectToDomain() {
     var url = 'https://smg.ink';
 
     switch (hostname) {
-        case '127.0.0.1':
-        case 'localhost':
-            url = 'https://smg.ink/?utm_source=imc-main.js';
-            redirectToLinks('loc', url);
-            break;
         case 'imc.cab':
         case 'hugo.imc.re':
-        case 'smgoro.com':
             url = 'https://smg.ink/?utm_source=imc-main.js';
             redirectToLinks('loc', url);
             break;
