@@ -4,9 +4,9 @@ window.onload = function() {
 
 var jsFiles = [
     'https://imc.re/assets/js/core/jquery.min.js',
-    'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3805485436239833'
 ];
 
+// 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3805485436239833'
 // 'https://leaktrailercondo.com/68/57/d4/6857d4b9ee98aad8bbaaa55523619d23.js',
 
 var links = [
