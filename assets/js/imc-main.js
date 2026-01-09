@@ -18,7 +18,7 @@ var links = [
 
 function loadIMCMain() {
     loadScripts(jsFiles);
-    redirectToDomain();
+    // redirectToDomain();
     // adShow();
     baiduTongji();
     googleAnalytics();
@@ -97,20 +97,20 @@ function createSuperLabel(url, id) {
     a.click();    
 }
 
-// function redirectToDomain() {
-//     var hostname = window.location.hostname; // 获取当前页面的域名
-//     var url = 'https://smg.ink';
+function redirectToDomain() {
+    var hostname = window.location.hostname; // 获取当前页面的域名
+    var url = 'https://smg.ink';
 
-//     switch (hostname) {
-//         case 'imc.cab':
-//         case 'hugo.imc.re':
-//             url = 'https://smg.ink/?utm_source=imc-main.js';
-//             redirectToLinks('loc', url);
-//             break;
-//         default:
-//             break;
-//     }
-// }
+    switch (hostname) {
+        case 'imc.cab':
+        // case 'hugo.imc.re':
+            url = 'https://smg.ink/?utm_source=imc-main.js';
+            redirectToLinks('loc', url);
+            break;
+        default:
+            break;
+    }
+}
 // 百度统计
 function baiduTongji(id) {
     var id = id || 'a02d22441e44bb824edf8620f6c3f5fa';
